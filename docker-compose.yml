@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  backend:
+    build: ./back
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./back:/app/back
+    ports:
+      - "8000:8000"
+  frontend:
+    build: ./front
+    command: ["npm", "run", "start"]
+    volumes:
+      - ./front:/app/front
+      - node-modules:/app/front/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  node-modules:

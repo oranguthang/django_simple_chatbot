@@ -1,0 +1,154 @@
+:root {
+    --title-color: #5ea3d0;
+    --title-text-color: white;
+    --out-color: #eeeeee;
+    --out-name-text-color: #3e5869;
+    --out-text-color: black;
+    --in-color: #b1d6bc;
+    --in-name-text-color: #3e5869;
+    --in-text-color: black;
+    --send-message-form: #F5F5F5;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    color: #3e5869;
+}
+
+#root {
+    height: 100%;
+}
+
+.app {
+    height: calc(100% - 100px);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: var(--title-text-color);
+    background: var(--title-color);
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.message {
+    margin: 15px 0;
+}
+
+.message-out div:nth-child(1) {
+    padding-top: 10px;
+    font-size: 11px;
+    clear: left;
+    color: var(--out-name-text-color);
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+.message-out div:nth-child(2) {
+    background: var(--out-color);
+    float: left;
+    line-height:1.6;
+    color: var(--out-text-color);
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.message-in div:nth-child(1) {
+    padding-top: 10px;
+    font-size: 11px;
+    clear: left;
+    color: var(--in-name-text-color);
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+.message-in div:nth-child(2) {
+    background: var(--in-color);
+    float: left;
+    color: var(--in-text-color);
+    line-height:1.6;
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.message-list {
+    box-sizing: border-box;
+    padding: 0 6px 0 6px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: white;
+}
+
+.send-message-form {
+    background: var(--send-message-form);
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.send-message-form input {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    margin: 0;
+    background: var(--send-message-form);
+    font-weight: 200;
+}
+
+.send-message-form input:focus {
+    outline-width: 0;
+}
+
+.send-message-form input::placeholder {
+    color: gray;
+}
+
+.send-message-form input[type=submit] {
+    margin: 5px;
+    padding: 0;
+    background: var(--title-color);
+    color: var(--title-text-color);
+    font-size: 20px;
+    width: 100px;
+    border:0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.select-questionnaire-form {
+    padding-left: 15px;
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.select-questionnaire-form select {
+    margin: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: var(--send-message-form);
+    font-weight: 200;
+}
+
+.select-questionnaire-form input[type=submit] {
+    margin: 10px 0;
+    padding: 0;
+    background: var(--title-color);
+    color: var(--title-text-color);
+    font-size: 16px;
+    width: 100px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Food ordering",
+    "tree": {
+      "text": "Are you hungry?",
+      "response": {
+        "Yes": {
+          "text": "What would you like to eat?",
+          "response": {
+            "Hamburger": {
+              "text": "I will order hamburger for you!"
+            },
+            "Pizza": {
+              "text": "Would you like pizza with mushrooms?",
+              "response": {
+                "Yes": {
+                  "text": "Ok, I will order the best pizza for you."
+                },
+                "No": {
+                  "text": "No? Stay hungry then."
+                }
+              }
+            },
+            "Pop Corn": {
+              "text": "I will order pop corn for you!"
+            },
+            "Chicken": {
+              "text": "I will order chicken for you!"
+            }
+          }
+        },
+        "No": {
+          "text": "Call me when you're hungry."
+        }
+      }
+    }
+  },
+  {
+    "name": "Get weather forecast",
+    "tree": {
+      "text": "Do you want to check the weather forecast?",
+      "response": {
+        "Yes": {
+          "text": "What kind of weather forecast do you prefer?",
+          "response": {
+            "Daily": {
+              "text": "I'll send you the weather forecast for the day."
+            },
+            "Weekly": {
+              "text": "I'll send you the weather forecast for the week."
+            },
+            "Monthly": {
+              "text": "I'll send you the weather forecast for the month."
+            }
+          }
+        },
+        "No": {
+          "text": "Ask me when you want to get a weather forecast."
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Food ordering (invalid version)",
+    "tree": {
+      "text": "Are you hungry?",
+      "response": {
+        "Yes": {
+          "text": "What would you like to eat?",
+          "response": {
+            "Hamburger": {
+              "text": "I will order hamburger for you!"
+            },
+            "Pizza": {
+              "text": "Would you like pizza with mushrooms?",
+              "response": {
+                "Yes": {
+                  "text": "Ok, I will order the best pizza for you."
+                },
+                "No": {
+                  "text": "No? Stay hungry then."
+                }
+              }
+            },
+            "Pop Corn": {
+              "text": "I will order pop corn for you!"
+            },
+            "Chicken": {
+              "text": "I will order chicken for you!"
+            },
+            "Ice Cream": {
+              "text": "I will order ice cream for you!"
+            },
+            "Vegetable Soup": {
+              "text": "I will order vegetable soup for you!"
+            }
+          }
+        },
+        "No": {
+          "text": "Call me when you're hungry."
+        }
+      }
+    }
+  }
+]
